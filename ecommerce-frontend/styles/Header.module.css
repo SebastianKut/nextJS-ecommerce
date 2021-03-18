@@ -12,3 +12,9 @@
   left: 0;
   line-height: normal;
 }
+
+.auth {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

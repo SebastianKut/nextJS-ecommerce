@@ -35,7 +35,6 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  console.log(context.params.slug);
   const product_req = await fetch(
     `${API_URL}/products/?slug=${context.params.slug}`
   );
