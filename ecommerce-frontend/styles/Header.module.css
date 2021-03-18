@@ -1,0 +1,14 @@
+.title {
+  text-align: center;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav__back {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  line-height: normal;
+}
