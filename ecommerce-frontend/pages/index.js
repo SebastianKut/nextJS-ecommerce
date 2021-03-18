@@ -47,4 +47,3 @@ export const getStaticProps = async () => {
 };
 
 //finished 43:30 https://www.youtube.com/watch?v=385cpCpGRC0&t=206s
-//Sprawdzic dokladnie jak dziala get static Paths - skad next wie ktory slug rzucic do fetch url - ogladnac crash course traversy media o tym

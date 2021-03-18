@@ -1,14 +1,13 @@
-import { useContext } from 'react';
 import styles from '../styles/Header.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import AuthContext from '../context/AuthContext';
+import { useGlobalContext } from '../context/AuthContext';
 
 function Header() {
   const router = useRouter();
   const isHome = router.pathname === '/';
 
-  const { user } = useContext(AuthContext);
+  const { user } = useGlobalContext();
 
   const goBack = (e) => {
     e.preventDefault();

@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 import { useRouter } from 'next/router';
 
 const AuthContext = createContext();
@@ -14,6 +14,7 @@ export const AuthProvider = ({ children }) => {
 
   const logoutUser = async () => {
     setUser(null);
+    router.push('/');
   };
 
   return (
@@ -23,4 +24,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export default AuthContext;
+export const useGlobalContext = () => useContext(AuthContext);
